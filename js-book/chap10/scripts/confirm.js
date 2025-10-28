@@ -1,0 +1,9 @@
+document.querySelector('#fm').addEventListener(
+  'submit',
+  function (e) {
+    if (!window.confirm('ページを送信しても良いですか？')) {
+      e.preventDefault();
+    }
+  },
+  false
+);
